@@ -1,0 +1,425 @@
+body {
+    margin:0 0 20 0;
+    background-color: white;
+    color:darkblue;
+}
+.header {
+   background-color: plum;
+   color: black;
+   padding-left: 10px;
+   font-family:Georgia, 'Times New Roman', Times, serif
+}
+.pages {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.search-container {
+    float:right;
+    background-color:plum;
+    margin-top: 4px;
+}
+.search-container button {
+    float: right;
+    background-color: powderblue;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2px;
+    
+}
+#navbar {
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    padding: 0 30px;
+    margin-left: -8px;
+    -webkit-box-shadow: -1px 4px 5px 0px rgb(27, 24, 27);
+    -moz-box-shadow: -1px 4px 5px 0px rgb(14, 12, 14);
+    box-shadow: -1px 4px 5px 0px rgb(7, 6, 7); ;
+}
+#logo {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    /*font-size:40px*/
+    color:rgb(90, 15, 15);
+    text-transform: uppercase;
+}
+#logo span:hover {
+    color: rgb(130, 12, 177);
+}
+.menu {
+    font-size: 25px;
+}
+.search:hover {
+    font-weight: bold;
+   
+}
+
+a {
+    text-decoration: none;
+    color:rgb(87, 15, 87);
+}
+ul {
+    padding: 20px 18px;
+    list-style: none;
+    background-color:pink;
+}
+ul > li {
+    display: inline;
+    font-size: 18px;
+}
+ul li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul li a {
+   color: purple;
+   text-decoration: none;
+}
+ul li a:hover {
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+/*pagination*/
+.center {
+    text-align: center;
+}
+.pagination {
+    display:inline-block;
+    position: relative;
+    padding-top: 80px;
+    padding-left:-6em;
+}
+.pagination a {
+    color:salmon;
+    float: left;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0px 4px;
+}
+.pagination a.active {
+    background-color:orange;
+    color: indianred;
+    border: 1px solid orange;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+@media screen and (max-width: 768px) {
+    #navbar .pages a:not(first-child) {
+        display: none;
+    }
+}
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:768px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+.footer-distributed {
+    background-color: lightcoral;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font:bold 16px sans-serif;
+    padding: 14px 14px 14px 14px;
+    margin-top: 70px ;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-distributed .footer-left {
+    width: 30%;
+}
+.footer-distributed h3 {
+    font-size: 26px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:5px;
+}
+.footer-distributed h3 span {
+    color:darkred;
+    margin-left: -5px;
+}
+.footer-distributed .footer-links {
+    color:darkslateblue;
+    margin: 10px 0 10px;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height:1.8;
+    text-decoration: none;
+    color:firebrick;
+}
+.footer-distributed .footer-company-name {
+    color: goldenrod;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+/*product list*/
+.product-filter {
+    display: flex;
+}
+.product-filter h1 {
+    flex-grow: 1
+}
+.filter {
+    display: flex;
+}
+.collection-cars {
+    display: flex;
+   flex-direction:column;
+   color:darkblue;
+}
+.collection-cars .Now {
+    background-color: lightskyblue;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.collection-cars .Now:hover {
+    color:rgb(98, 26, 231);
+}
+.collection-cars:hover {
+    color: red;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    padding: 0%;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 1%;
+    display:flex;
+}
+.product-image img {
+    width: 400px;
+    height: 250px;
+    max-width: 100%;
+}
+.product-info {
+    margin-top: auto;
+    padding: 10px;
+}
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+    flex: 2.45%; 
+}
+.available-false {
+    font-size: 15px;
+    color: red;
+}
+.available-true {
+    font-size: 15px;
+    text-decoration: underline;
+}
+.buy {
+    box-shadow: 0px 1px 0px 0px black;
+    background: orange;
+    border-radius: 6px;
+    border:1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color:lightyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow:0px -1px 0px #2f6627;
+}
+.buy:hover {
+    background-color: darkorange;
+}
+.buy:active {
+    position: relative;
+    top: 1px;
+}
+ .container {
+     max-width: 1200px;
+     margin:0 auto;
+     padding: 15px;
+     display: flex;
+}
+.left-column {
+    width: 65%;
+    position: relative;
+}
+.right-column {
+    width: 35%;
+    margin-top: 80px;
+}
+.left-column img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin-left: -30px;
+    border-radius: 20%;
+}
+.left-column img.active {
+    opacity: 1;
+}
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.product-description span {
+    font-size: 12px;
+    color: dimgrey;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.product-description h1 {
+    font-size: 52px;
+    color: firebrick;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.product-description p {
+    font-size: 10px;
+    color: darkslateblue;
+    font-weight: 300;
+    line-height: 24px;
+}
+.top {
+    margin-top: 250px;
+}
+@media (max-width: 920px) {
+    .product-card {
+        flex: 1 21%;
+    }
+}
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 46%;
+    }
+}
+@media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+}
+    @media (max-width: 480px) {
+        .product-filter {
+          flex-direction: column;
+        }
+    .filter {
+        align-self: flex-start;
+    }
+}
+.footer-distributed .footer-center i{
+    background-color: goldenrod;
+    color: lightsalmon;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 15px;
+    vertical-align:middle;
+}
+.footer-distributed .footer-center i.fa-email{
+    font-size:16px;
+    line-height: 37px;
+}
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color:rgb(128, 73, 34);
+    vertical-align: middle;
+    margin:0;
+}
+.footer-distributed .footer-center p span{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-distributed .footer-center p a{
+    color: crimson;
+    text-decoration: none;
+}
+.footer-distributed .footer-right {
+    width: 35%;
+}
+.footer-distributed .footer-company-about {
+   line-height: 20px;
+   color: rgb(153, 41, 41); 
+   font-size: 12px;
+   font-weight: 400;
+   margin: 0;
+}
+.footer-distributed.footer-company-about span{
+    display: block;
+    color:rgb(153, 41, 41);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+    margin-left: 0px;
+}
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    cursor:pointer;
+    background-color: lightgoldenrodyellow;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    color: navy;
+    line-height: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+.footer-distributed .footer-icons a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.cable-choose button {
+    background-color:darkslategrey;
+    color:tomato;
+    font-size: 14px;
+}
+.cable-choose button:hover {
+    color:black;
+}
+@media (max-width: 768px) {
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}

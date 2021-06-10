@@ -1,0 +1,42 @@
+.soul {
+    background-color: orange;
+}
+
+img {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;    
+}
+.name { 
+    color:white;
+    background-color: black;
+}
+
+.Time {
+    background-color: green;
+}
+
+.Space {
+    background-color: blue;
+}
+.Mind {
+    background-color: yellow;
+}
+.Reality {
+    background-color: red;
+}
+.power {
+    background-color: purple;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: solid 2px;
+    border-color:gray;
+    padding: 10px;
+}
+
+table border="2" align="center" width="70%" cellspacing="0" 

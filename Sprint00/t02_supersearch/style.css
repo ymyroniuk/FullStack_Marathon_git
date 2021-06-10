@@ -1,0 +1,28 @@
+
+ [type="search"] 
+{
+    width: 500px;
+    border-color: blue;
+    color:green;
+    border-radius: 5px;
+    text-indent: 10px;
+    text-size-adjust: 2em;
+}
+[value="Find"]
+{
+    color: green;
+    height:22px;
+}
+[type="submit"]
+{
+    margin-left: -4px;
+}
+[type="submit"]:hover
+{
+    color:red;
+}
+[type="search"]:hover
+{
+    color: red;
+}
+

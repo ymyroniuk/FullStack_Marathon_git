@@ -1,0 +1,104 @@
+.Head {
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: honeydew;
+}
+span {
+    font-size: 30px;
+}
+* {
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Menu {
+    margin: -1em;
+}
+.first-menu {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color:cyan;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.Submenu {
+    visibility: hidden;
+    position:absolute;
+    opacity: 0;
+}
+.Submenu > li {
+    width: 250px;
+    height:156px;
+    position: relative;
+    top: 25.4px;
+    left: -61px;
+    margin: -1px 20px -1px 20px;
+    padding-top: 10px;
+    border-radius: 2px;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+.Submenu > li:hover {
+    background-color: rgb(88, 133, 22);
+    font-weight: 800;
+    text-decoration: underline;
+}
+.Menu > .first-menu:hover {
+    background-color:greenyellow;
+    text-decoration: underline;
+}
+.Submenu > li > ul > li {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: 190px;
+    top: -30px;
+    margin: -1px 20px -1px 20px;
+    border-radius: 2px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity: 0;
+}
+
+.Submenu > li > ul > li:hover {
+    background-color: green;
+    font-weight: 800;
+}
+
+.first-menu:hover > .Submenu {
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    transition: 2s;
+}
+.first-menu:hover > .Submenu > ul {
+    visibility: hidden;
+    position: absolute;
+    opacity: 1;
+}
+.Submenu > .fruits:hover > .Submenu-Fruits >li {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.Submenu > .vegetables:hover > .Submenu-vegetables >li {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.Submenu > .meat:hover > .Submenu-Meat >li {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+
+

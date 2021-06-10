@@ -1,0 +1,36 @@
+table {
+    border: 2px solid black;
+    width: 400px;
+    border-collapse: inherit;
+}
+main {
+    display: block;
+}
+#placeholder {
+    display: flex;
+    justify-content: center;
+}
+#notification {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    text-align:center;
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    width: 30%;
+    height: 2em;
+    padding-top: 6px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+th {
+    cursor: pointer;
+    background-color: rgb(224, 31, 31);
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    width: 30% ;
+}
+td {
+    background-color: linen;
+}

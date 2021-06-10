@@ -1,0 +1,27 @@
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.input {
+    color: #52813a;
+    flex-grow: 1;
+    height: 2.5em;
+}
+input::placeholder {
+    color: green;
+}
+.button {
+    position: relative;
+    height: 32px;
+    margin-top: 1px;
+    color: grey;
+}
+.button:hover{
+    color:red
+}

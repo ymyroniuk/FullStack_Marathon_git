@@ -1,0 +1,61 @@
+.wrapper {
+    margin: auto;
+    position: relative;
+    top: 50px;
+    max-width: 650px;
+    height: 300px;
+    background-color: lightgrey
+}
+#butt {
+    display: flex;
+    justify-content: space-between;
+}
+#btnadd {
+    background-color: lightseagreen;
+    color: black;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+}
+#btnclear {
+    background-color: purple;
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 25px;
+}
+span { 
+    color: darkslategray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn {
+    border-radius: 10px;
+}
+.data-base {
+    padding-top: 7px;
+}
+#inputResult {
+    border-color: rgb(34, 105, 105);
+}
+#btnadd:hover {
+    transition: 2s;
+    background-color:lightyellow;
+    box-shadow: 10px 5px 5px lightseagreen;
+}
+#btnclear:hover {
+    transition: 2s;
+    background-color: plum;
+    box-shadow: 3px 3px rgb(92, 8, 78), -1em 0 .4em rgb(92, 8, 78);
+}
+#textCoolies:hover {
+    transition: 1s;
+    box-shadow: 10px 5px 5px rgb(10, 10, 10);
+}
+#inputResult:hover {
+    box-shadow: 10px 5px 5px rgb(10, 10, 10);
+    transition: 1s;
+}
+
+

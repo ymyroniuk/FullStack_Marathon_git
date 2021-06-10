@@ -1,0 +1,32 @@
+.Temperature {
+    font-weight: 400;
+    font-size: 2em;
+
+}
+.date {
+    font-weight: 700;
+    padding: 1px;
+    margin-right: -2px;
+    color: white;
+    background-color:rgb(98, 155, 173);
+    text-align: center;
+    font-size: 1.5em;
+}
+.img  {
+    width: 70em;
+    left: px;
+   
+}
+.week {
+    font-family: Lato, Helvetica, serif;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+.day {
+    display: inline-block;
+    text-align: center;
+}
+.day:hover {
+   box-shadow: 0 0 10px gray; 
+}

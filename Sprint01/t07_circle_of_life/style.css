@@ -1,0 +1,30 @@
+.container {
+    margin: 20px;
+    height: 100px;
+    border: 1px solid green;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    transition: background-color 2s ease-out;
+}
+.circle:hover {
+    background-color: red;
+    border: 1.5px solid red;
+}
+@keyframes circle {
+    from {
+        margin-left:0%;
+    }
+    to {
+        margin-left: calc(100% - 150px);
+    }
+}

@@ -1,0 +1,209 @@
+h1 {
+    color:#404650 ;
+    text-align: center;
+}
+.Back {
+    background-color: #404750;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;  
+    padding: 10px 0px 0px 0px;
+    margin: 20px;
+    border-collapse: collapse; 
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+.center {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6em;
+    border:1px solid #6c6f73;
+    background-color:#4a525d;
+    padding: 3em 3em 4em 3em ;
+    margin: 5px 0px 10px 0px;
+}
+.center > div > p {
+    color: #c7c8c9;
+    font-size: 1em;
+}
+#Typeface {
+    background-color: #333a41;
+    color: #cbcbcc;
+    border: 1px solid #767a80;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1em;
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+}
+.select > label {
+    border-right: 2px solid #c1c1c2;
+    border-bottom: 2px solid #c1c1c2;
+    transform: translate(-2em, 0.5em) rotate(45deg);
+    position: absolute;
+    width: 10px;
+    height: 11px;
+}
+#dark {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.Selectdark {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:end;
+}
+#dark + label {
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #333a41;
+    position: relative;
+    border-radius: 20px;
+
+}
+#dark + label::after {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #75b7a6;
+    content: "";
+    position: absolute;
+    margin: 4px;
+    transition: 0.5s;
+}
+#dark:checked + label {
+    background-color: #5a93e5;
+}
+#dark:checked + label::after {
+    margin: 4px 4px 4px 44px;
+    transition: 0.5s;
+}
+.selectweight > form > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.selectweight > form > input + label {
+    margin-left: 1.5em;
+    color:#cbcbcc;
+    position: relative;
+}
+.selectweight > form > label::before {
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    background-color:#333a41;
+    border: 1px solid #a6a7a9;
+    content:"";
+    margin-left: -1.5em ;
+    text-align: center;
+} 
+.selectweight > form > input:checked + label::before {
+    content:"✓";
+    color: #75b7a6;
+    text-align: center;
+}
+.selectcolor > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .selectcolor > div > input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+  .selectcolor > div > input + label {
+      width: 25px;
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 50%;
+  }
+  .selectcolor > div > input:checked + label::after {
+    content: "✓";
+    text-align: center;
+    color: white;
+    font-size:18px;
+    position: relative;
+    left: 6px;
+    top: 2px;
+  }
+  .selectcolor > div #blue + label {
+      background:#5274b4;
+  }
+  .selectcolor > div #green + label {
+    background:#75b7a6;
+}
+.selectcolor > div #pink + label {
+    background:#c168c5;
+}
+.selectcolor > div #yellow + label {
+    background:#dbd878;
+}
+.selectcolor > div #orange + label {
+    background:#c78565;
+}
+.selectsize > input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    position: relative;
+    background:transparent;
+    outline: none;
+}
+.selectsize > input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background:#75b7a6;
+    position: relative;
+    bottom: 8px;
+    border-radius: 50%;
+}
+.selectsize > input[type="range"]::-webkit-slider-runnable-track {
+    background: #3b424b;
+    height: 2px;
+}
+.selectsize > input::after,
+.selectsize > input::before {
+    content: "A";
+    position: relative;
+    color: white;
+    top: 100%;
+}
+.selectsize > input::after {
+    font-size: 30px;
+    right: 100%;
+}
+.selectsize > input::before {
+    font-size: 18px;
+    left: 100%;
+}  
+.button {
+    background: #333a41;
+    border-radius: 0 20px 20px 0;
+    margin: 10px 30px 20px 0px;
+} 
+.button > label > img {
+    margin: 1em;
+    height: 2em;
+}
+.button > label > input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+} 
+@media screen and (max-width: 660px) {
+    #center {
+      grid-template-columns: 1fr;
+    }
+}

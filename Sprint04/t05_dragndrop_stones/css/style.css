@@ -1,0 +1,49 @@
+.subject {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: lightskyblue;
+
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    /* второй блок */
+    -webkit-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin-top: 425px;
+    margin-left: 300px;
+}
+.subject:nth-child(2) {
+    background-color: rgb(114, 0, 38);
+    margin-top: 300px;
+    margin-left: 200px;
+}
+.subject:nth-child(3) {
+    background-color:rgb(18, 163, 18);
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.subject:nth-child(4) {
+    background-color: purple;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+.subject:nth-child(5) {
+    background-color: tomato;
+    margin-left: 200px;
+    margin-top: 550px;
+}
+.subject:nth-child(6) {
+    background-color:darkorange;
+    margin-top: 550px;
+    margin-left: 400px;
+}
+.border {
+    outline: 2px dashed rgb(177, 26, 26)
+}

@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue
+}
+h1:hover {
+    color: red
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.photo {
+    height: 400px;
+    width: 450px;
+}
+.photo2 {
+/* height: 400px;*/
+    width: 650px
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.content {
+    border: 2px solid rgb(50, 31, 31);
+    border-radius: 20px;
+    padding: 20px;
+}
+.but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+button {
+    background-color: lightsalmon;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: darkred;
+}
+#turnSup, #fly, #fight {
+    display: none;
+    background-color: chocolate;
+    color: black;
+}
+ #fight:hover {
+    background-color: lightcoral;
+    color:black;
+}
+#turnSup:hover {
+    background-color: mistyrose;
+    color: orangered;
+}
+#fly:hover {
+    background-color: paleturquoise;
+    color: rebeccapurple;
+}
+#feed:hover {
+    background-color:thistle;
+    color: rgb(173, 23, 243);
+    -webkit-animation: feed 1s linear infinite;
+    animation: feed 1s linear infinite;
+}
+#sleep:hover {
+    background-color:thistle;
+    color: rgb(173, 23, 243);
+    -webkit-animation: feed 1s linear infinite;
+    animation: feed 1s linear infinite;
+}
+@-webkit-keyframes feed {
+    100% { color: darkslateblue}
+}
+@keyframes feed {
+    100% { color: rgb(9, 65, 250)}
+}
+p {
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.feed {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.hung {
+    text-align: center;
+    background-color:rgb(235, 115, 88);
+    display: none;
+    -webkit-animation: hung 2s linear infinite;
+    animation: hung 2s linear infinite;
+}
+@-webkit-keyframes hung {
+    100% { color: darkslateblue}
+}
+@keyframes hung {
+    100% { color: rgb(251, 255, 21)}
+}
+.full {
+    text-align: center;
+    background-color: lightcoral;
+    display: none;
+}
+.eat {
+    text-align: center;
+    background-color: rgb(172, 108, 101);
+    display: none;
+}
+.modal {
+    text-align: center;
+    background-color: rgb(164, 189, 243);
+    display: none;
+    -webkit-animation: modal 2s linear infinite;
+    animation: modal 2s linear infinite;
+}
+@-webkit-keyframes modal {
+    100% {color:mediumslateblue }
+}
+@keyframes modal {
+    100% {color: rgb(11, 247, 148)}
+}
+.modalTotal {
+    background-color: rgb(194, 171, 179);
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}

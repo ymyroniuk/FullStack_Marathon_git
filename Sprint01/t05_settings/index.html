@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <meta name="description" content="t05_settings">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Settings</h1>
+    <div class="Back">
+        <div class="center">
+            <div class="select">
+              <P>Typeface</P>
+              <select name="typeface" id="Typeface">
+                  <option value="AcunimPro">Acunim Pro</option>
+                  <option value="ComicSans">Comic Sans</option>
+                  <option disabled value="TimesNew">Times New Roman</option>
+              </select> 
+              <label for="typeface"></label>
+            </div>
+            <div class="Selectdark">
+                <p>Dark UI</p>
+                <input type="checkbox" name="dark" id="dark">
+                <label for="dark"></label>
+            </div>
+           <div class="selectweight">
+               <p>Weight</p>
+               <form>
+               <input type="checkbox" name="first" id="first">
+               <label for="first">Regular</label>
+               <input type="checkbox" name="second" id="second">
+               <label for="second">Bold</label>
+            </form>
+           </div>
+           <div class="selectcolor">
+               <p>Color</p>
+               <div class="color">
+                   <input type="checkbox" name="blue" id="blue">
+                   <label for="blue"></label>
+                   <input type="checkbox" name="green" id="green">
+                   <label for="green"></label>
+                   <input type="checkbox" name="pink" id="pink">
+                   <label for="pink"></label>
+                   <input type="checkbox" name="yellow" id="yellow">
+                   <label for="yellow"></label>
+                   <input type="checkbox" name="orange" id="orange" checked>
+                   <label for="orange"></label>
+               </div>
+           </div>
+           <div class="selectsize">
+               <p>Size</p>
+               <input type="range" id="fontsize" min="12" max="32" step="1" value="0">
+               <label for="fontsize"></label>
+           </div> 
+        </div>
+        <nav class="button">
+            <label for="settings-button">
+                <input type="button" name="settings" id="settings-button" value="settings">
+                <img src="assets/images/artistic-brush.png" alt="brush">
+            </label><br>
+             <label for="user-button">
+                 <input type="button" name="user" id="user-button" value="user">
+                 <img src="assets/images/user-icon.png" alt="user">
+             </label><br>
+             <label form="sms-button">
+                 <input type="button" name="sms" id="sms-button" value="Sms">
+                 <img src="assets/images/sms-speech-bubble.png" alt="SMS">
+             </label><br>
+             <label class="computer-button">
+                 <input type="button" name="Computer" id="computer-button" value="Computer">
+                 <img src="assets/images/computer-screen.png" alt="COMPUTER">
+             </label><br>
+             </nav>
+        
+</body>
+
+</html>
