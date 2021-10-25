@@ -1,0 +1,45 @@
+.grey{
+    width: 925px;
+    background-color: rgb(201, 184, 184);
+    height: 200px;
+}
+.big-form{
+    width: 900px;
+    padding: 25px;
+}
+.about{
+    margin: 25px 0px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#clear {
+    background-color: rgb(121, 54, 42);
+    margin-top: 12px;
+    width: 100px;
+    height: 20px;
+    color: white;
+}
+#send {
+    background-color: rgb(114, 53, 42);
+    margin-top: 12px;
+    width: 100px;
+    height: 20px;
+    color: white;
+}
+#send:hover {
+    letter-spacing: 2px;
+    background-color: rgb(204, 27, 27);
+    color: black;
+    transform: rotate(10deg);
+    transition: all 1s;
+}
+#clear:hover {
+    letter-spacing: 2px;
+    background-color: rgb(207, 28, 28);
+    color: black;
+    transform: rotate(-10deg);
+    transition: all 1s;
+}

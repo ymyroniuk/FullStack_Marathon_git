@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
+</head>
+<body>
+    <div id="login" class="col s6 offset-s3">
+       <h2>Sign in</h2>
+       <form action="/login" method="POST" class="frm">
+   <div class="input-field">
+       <input  id="email" name="email" type="email" class="validate" required>
+       <label for="email">Email</label>
+       <span class="helper-text" data-error="Enter your email"></span>
+   </div>
+
+   <div class="input-field">
+       <input id="password" name="password" type="password" class="validate" required>
+       <label for="password">Password</label>
+       <span class="helper-text" data-error="Enter your password"></span>
+       <a class="linkreg" href="/register">Registration</a>
+   </div>
+   <input type="hidden">
+   <p class="frg-pass"><a href="/reset">Forgot password?</a></p>
+   <button class="btn btn-primary sign" type="submit">Sign in</button>
+</form>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
