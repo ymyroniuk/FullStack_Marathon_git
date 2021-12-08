@@ -3,7 +3,6 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const routes = require('./routes/router');
 const session = require('express-session');
-const User = require('./models/user')
 
 const app = express()
 
@@ -28,12 +27,6 @@ const PORT = process.env.PORT || 3000;
 
 async function start() {
     try {
-        let user = new User()
-        if (user.connect) {
-            console.log('Connection was successful to database');
-        } else {
-            console.log('Error connection to database');
-        }
         app.listen(PORT, () => {
             console.log(`Server has been started on PORT ${PORT}`);
         })

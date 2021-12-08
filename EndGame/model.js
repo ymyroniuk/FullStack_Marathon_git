@@ -47,15 +47,15 @@ class Model {
             database: config.db.database,
             password: config.db.password,
         });
-       this.connection.connect()
+        this.connection.connect()
         let result;
             try {
                 result = this.connection.promise().query(query);
             } catch (error) {
                 console.log(error);
             }
-       this.connection.end()
-       return result  
+        this.connection.end()
+        return result
     }
 }
 

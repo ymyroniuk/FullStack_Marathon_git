@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>EndGame</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Rampart One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" src="main.css">
+    </link>
     <link rel="stylesheet" href="style.css">
-    <title>Main page</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+
 </head>
+
 <body>
-    <div class="card">
-        <div class="card-image waves-effect waves-block waves-light centr">
-          <img class="activator" src="https://worksolutions.ru/storage/UxBYDUfBNl9RfD5r6wMDvAWke3mGTfZaDcmHGZWc.png">
+    <header class="jumbotron text-center" id="shake">EndGame</header>
+    <a href="/login" id="logout">Logout</a>
+    <main>
+        <div class="jumbotron text-center">
+            <div id="winner"></div>
+            <div id="game-over"></div>
         </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex quia ipsam inventore qui exercitationem aperiam laborum sint libero saepe cumque, alias expedita quis, id facilis porro dolor impedit? Saepe.</i></span>
-          <p><a href="/">Logout</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <div><label class="ply">Player 1 Score: </label><span id="player1-score"></span></div>
+        <div><label class="ply">Player 2 Score: </label><span id="player2-score"></span></div>
+        <img id="player1" />
+
+        <section id="middle">
+            <button id="new-game">New Game</button>
+            <button id="new-hand">Deal Hands</button>
+            <button id="next-turn">Next Turn</button>
+        </section>
+        <img id="player2" />
+    </main>
+    
 </body>
+
 </html>

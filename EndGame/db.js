@@ -2,7 +2,6 @@ const path = require('path');
 const User = require('./models/user');
 const bcrypt = require('bcryptjs');
 const validate = require('./middlleware/validate');
-const accessToken = require('./tokens/accessToken');
 
 class Controller {
     async registrationGET(req, res) {
@@ -47,17 +46,10 @@ class Controller {
                 res.redirect('/home')
             } else {
                 const user = new User()
-                let result = await user.getAll({email: req.body.email});
+                let result = await user.getAll({ email: req.body.email });
                 if (result.length > 0 && await bcrypt.compare(req.body.password, result[0].password)) {
                     sess.user = result[0];
-                    const jwtToken = accessToken(result[0].id)
-                    console.log(jwtToken);
-                    if (err instanceof jwt.TokenExpiredError) {
-                         res.status(401).json({message: 'Token expired'})
-                    } else if (err instanceof jwt.JsonWebTokenError) {
-                      return res.status(401).json({ message: 'Invalid token!' })
-                    }
-                    return res.redirect('/home')
+                    res.redirect('/home')
                 } else {
                     res.send('Password and login not valid, please change it!')
                 }
@@ -71,7 +63,7 @@ class Controller {
             if (err) {
                 return console.log(err);
             } else {
-                res.redirect('/');
+                res.redirect('/login');
             }
         })
     }
